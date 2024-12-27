@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>OTD</th>
+        <th>ITEM</th>
+        <th>QUANTITY</th>
+        <th>TOTAL</th>
+    </tr>
+    <tr>
+        {% for i in data %}
+        <td>{{i[0]}}</td>
+        <td>{{i[2]}}</td>
+        <td>{{i[3]}}</td>
+        <td>{{i[4]}}</td>
+        {% endfor %}
+    </tr>
+</table>

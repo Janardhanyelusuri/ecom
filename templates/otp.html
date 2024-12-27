@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='reg.css')}}">
+</head>
+<body>
+    <div class="card">
+        {{wrong}}
+        <form method="POST" action="{{url_for('otp',otp=otp,name=name,mobile=mobile,email=email,address=address,password=password)}}">
+            <h5>Enter the code we just send on Email</h5>
+            <input type="text" name="otp" id=""><br><br>
+            <button>Sign up</button>
+        </form>
+        <hr>
+        <br>
+        <a href="{{url_for('login')}}"><button class="form-button">student login</button></a>
+    </div>
+   
+</body>
+</html>
